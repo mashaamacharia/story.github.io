@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Forest Adventure</title>
+    <link rel="stylesheet" href="anime.css">
+    <script src="sound.js"></script>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="story-container">
+        <!-- Header with Story Title -->
+        <header>
+            <h1>The Magical Forest Adventure</h1>
+        </header>
+<!-- Add this to your HTML file -->
+<audio id="background-music" autoplay loop>
+    <source src="images\524813__zhr__relaxation-music-16.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<!-- Add a button to mute/unmute the music -->
+<div class="music-control">
+    <button id="music-toggle" onclick="toggleMusic()">Mute Music</button>
+</div>
+
+        <!-- Story Section -->
+        <div class="story-section">
+            <div class="story-content">
+                <img id="story-image" src="images\forestscene.jpeg" alt="Forest Scene">
+                <p id="story-text">You are about to enter the magical forest. What do you want to do?</p>
+            </div>
+
+            <!-- Interactive Choices -->
+            <div class="choices">
+                <button onclick="choosePath('forest')">Explore the Forest</button>
+                <button onclick="choosePath('cloud')">Ride the Magic Cloud</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="anime.js"></script>
+</body>
+</html>
